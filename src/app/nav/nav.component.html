@@ -1,0 +1,43 @@
+<mat-sidenav-container class="example-container" autosize>
+  <mat-sidenav #sidenav [ngStyle]="{ 'width.em': sidenavWidth }" class="example-sidenav mat-elevation-z2" mode="side" opened="true">
+
+    <mat-card class="example-card mat-elevation-z0">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title *ngIf="isExpanded">Shiba Inu</mat-card-title>
+        <mat-card-subtitle *ngIf="isExpanded">Dog Breed</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+    <mat-nav-list>
+      <mat-list-item>
+        <mat-icon mat-list-icon>home</mat-icon>
+        <p matLine *ngIf="isExpanded">Home</p>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary" class=" mat-elevation-z4">
+      <button type="button" aria-label="Toggle sidenav" (click)="miniVariant()" mat-icon-button>
+        <mat-icon *ngIf="!isExpanded">menu_open</mat-icon>
+        <mat-icon *ngIf="isExpanded">menu</mat-icon>
+      </button>
+      <!-- This fills the remaining space of the current row -->
+      <span class="example-fill-remaining-space"></span>
+
+      <span>
+        <button mat-button [matMenuTriggerFor]="menu">
+          <mat-icon>person</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+        </mat-menu>
+      </span>
+    </mat-toolbar>
+    <div class="example-sidenav-content">
+      Main content that resizes properly
+    </div>
+  </mat-sidenav-content>
+
+
+</mat-sidenav-container>
