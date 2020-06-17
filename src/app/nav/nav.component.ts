@@ -6,7 +6,7 @@ import { map, shareReplay } from 'rxjs/operators';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.css']
+  styleUrls: ['./nav.component.scss']
 })
 export class NavComponent {
   sidenavWidth = 4;
@@ -28,7 +28,7 @@ export class NavComponent {
     } else {
       this.sidenavWidth = 15;
     }
-    this.isExpanded = !this.isExpanded
+    this.isExpanded = !this.isExpanded;
     console.log('increase sidenav width');
   }
 

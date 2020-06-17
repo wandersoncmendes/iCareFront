@@ -1,25 +1,14 @@
-<section class="page_404">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 ">
-                <div class="col-sm-12 col-sm-offset-1  text-center">
-                    <div class="four_zero_four_bg">
-                        <h1 class="text-center ">404</h1>
-
-
-                    </div>
-
-                    <div class="contant_box_404">
-                        <h3 class="h2">
-                            Parece que você está perdido
-                        </h3>
-
-                        <p>A página que você está procurando não está disponível!</p>
-
-                        <a [routerLink]="['/main']" class="link_404">Voltar para tela inicial</a>
-                    </div>
-                </div>
-            </div>
+<div class="container-fluid d-flex stripe-1" style="height: 100vh !important">
+    <div class="d-block m-auto">
+      <div class="mr-3 d-none d-sm-inline">
+        <img src="assets/error/404.svg" alt />
+      </div>
+      <div class="text-md-center">
+        <h1>404</h1>
+        <h2 class="my-3 headline">Página não encontrada.</h2>
+        <div>
+          <button class="btn btn-danger py-3 w-100" [routerLink]="['/main']" routerLinkActive="router-link-active" >Voltar a página inicial</button>
         </div>
+      </div>
     </div>
-</section>
+  </div>
