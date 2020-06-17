@@ -12,12 +12,17 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import {MatMenuModule} from '@angular/material/menu';
+import { MainModule } from './main/main.module';
+import { LoginModule } from './login/login.module';
+import { AppRoutingModule } from './app-routing.module';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +35,10 @@ import {MatMenuModule} from '@angular/material/menu';
     MatListModule,
     MatCardModule,
     MatMenuModule,
+
+    LoginModule,
+    MainModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
