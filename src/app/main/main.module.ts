@@ -11,6 +11,7 @@ import { MatListModule } from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import {MatMenuModule} from '@angular/material/menu';
 import { MainRoutingModule } from './main-routing.module';
+import { BreadcrumbModule } from '../core/breadcrumb/breadcrumb.module';
 
 
 
@@ -29,6 +30,8 @@ import { MainRoutingModule } from './main-routing.module';
     MatListModule,
     MatCardModule,
     MatMenuModule,
+
+    BreadcrumbModule,
 
     MainRoutingModule,
   ]

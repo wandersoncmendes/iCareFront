@@ -1,7 +1,8 @@
 <mat-sidenav-container class="example-container" autosize>
-  <mat-sidenav #sidenav [ngStyle]="{ 'width.em': sidenavWidth }" class="example-sidenav mat-elevation-z1" mode="side" opened="true">
+  <mat-sidenav #sidenav [ngStyle]="{ 'width.em': sidenavWidth }" class="example-sidenav mat-elevation-z1" mode="side"
+    opened="true">
 
-    <mat-card class="example-card mat-elevation-z0" >
+    <mat-card class="example-card mat-elevation-z0">
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
         <mat-card-title *ngIf="isExpanded">Shiba Inu</mat-card-title>
@@ -33,7 +34,8 @@
         </mat-menu>
       </span>
     </mat-toolbar>
-    <div class="example-sidenav-content">
+    <div class="example-sidenav-content p-2">
+      <app-breadcrumb></app-breadcrumb>
       Main content that resizes properly
     </div>
   </mat-sidenav-content>

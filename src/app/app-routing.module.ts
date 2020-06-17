@@ -10,6 +10,9 @@ export const ROUTES: Routes = [] = [
   },
   {
     path: 'main',
+    data: {
+      breadcrumb: 'Home'
+    },
     canActivate: [Guard],
     loadChildren: () => import('./main/main.module').then(m => m.MainModule)
   },
