@@ -5,7 +5,9 @@
 }
 
 .example-sidenav-content {
-  height: 100vh;
+  height: calc(100vh - 64px);
+  overflow-y: auto;
+  
 }
 
 .example-header-image {
