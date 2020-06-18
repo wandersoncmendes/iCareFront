@@ -1,0 +1,47 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+}
+
+table {
+    width: 100%;
+}
+
+.no-records {
+    // height: 24px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eeeeee;
+}
+
+i {
+    font-size: 1.5rem;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+td.mat-column-actions {
+    width: 80px;
+    padding-right: 8px;
+  }
+
+th.mat-column-position, td.mat-column-position {
+    padding-left: 8px;
+}
+
+.mat-table-sticky:first-child {
+    border-right: 1px solid #e0e0e0;
+}
+
+.mat-table-sticky:last-child {
+    border-left: 1px solid #e0e0e0;
+}

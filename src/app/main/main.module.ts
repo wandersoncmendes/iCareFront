@@ -12,8 +12,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatMenuModule} from '@angular/material/menu';
 import { MainRoutingModule } from './main-routing.module';
 import { BreadcrumbModule } from '../core/breadcrumb/breadcrumb.module';
-
-
+import { CountryModule } from '../country/country.module';
 
 @NgModule({
   declarations: [
@@ -34,6 +33,8 @@ import { BreadcrumbModule } from '../core/breadcrumb/breadcrumb.module';
     BreadcrumbModule,
 
     MainRoutingModule,
+
+    CountryModule,
   ]
 })
 export class MainModule { }

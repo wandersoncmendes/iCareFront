@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
+import { MenuItem } from './manu-item';
 
 @Component({
   selector: 'app-nav',
@@ -13,6 +14,25 @@ export class NavComponent {
   // opened = false;
   isExpanded = false;
 
+  menuArray: MenuItem[] = [
+    {
+      title: 'Dashboard',
+      home: true,
+      icon: {
+        icon: 'home',
+        pack: 'material'
+      },
+      link: '/main/dashboard'
+    },
+    {
+      title: 'País',
+      icon: {
+        icon: 'home',
+        pack: 'material'
+      },
+      link: '/main/country'
+    }
+  ];
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
