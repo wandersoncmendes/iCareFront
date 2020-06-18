@@ -147,42 +147,41 @@ $mat-dark-theme-background: (
 // Theme Config
 
 body {
-  --primary-color: #383e5c;
-  --primary-lighter-color: #c3c5ce;
-  --primary-darker-color: #242841;
+  --primary-color: #252525;
+  --primary-lighter-color: #bebebe;
+  --primary-darker-color: #161616;
   --text-primary-color: #{$light-primary-text};
   --text-primary-lighter-color: #{$dark-primary-text};
   --text-primary-darker-color: #{$light-primary-text};
 }
 
 $mat-primary: (
-  main: #383e5c,
-  lighter: #c3c5ce,
-  darker: #242841,
-  200: #383e5c, // For slide toggle,
+  main: #252525,
+  lighter: #bebebe,
+  darker: #161616,
+  200: #252525, // For slide toggle,
   contrast : (
     main: $light-primary-text,
     lighter: $dark-primary-text,
     darker: $light-primary-text,
   )
 );
-
 $theme-primary: mat-palette($mat-primary, main, lighter, darker);
 
 body {
-  --accent-color: #f28946;
-  --accent-lighter-color: #fbdcc8;
-  --accent-darker-color: #ec6c2f;
+  --accent-color: #f2e205;
+  --accent-lighter-color: #fbf6b4;
+  --accent-darker-color: #ecd603;
   --text-accent-color: #{$dark-primary-text};
   --text-accent-lighter-color: #{$dark-primary-text};
   --text-accent-darker-color: #{$dark-primary-text};
 }
 
 $mat-accent: (
-  main: #f28946,
-  lighter: #fbdcc8,
-  darker: #ec6c2f,
-  200: #f28946, // For slide toggle,
+  main: #f2e205,
+  lighter: #fbf6b4,
+  darker: #ecd603,
+  200: #f2e205, // For slide toggle,
   contrast : (
     main: $dark-primary-text,
     lighter: $dark-primary-text,
@@ -215,12 +214,6 @@ $theme-warn: mat-palette($mat-warn, main, lighter, darker);;
 
 $theme: mat-light-theme($theme-primary, $theme-accent, $theme-warn);
 $altTheme: mat-dark-theme($theme-primary, $theme-accent, $theme-warn);
-
-// Custom Sass colors vars (will be available in all the project)
-$primary: mat-color($mat-primary);
-$accent: mat-color($mat-accent);
-$warn: mat-color($mat-warn);
-
 
 // Theme Init
 @include angular-material-theme($theme);

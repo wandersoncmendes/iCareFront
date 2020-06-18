@@ -1,3 +1,6 @@
+@import '~@angular/material/theming';
+@import '../../theme.scss';
+
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
